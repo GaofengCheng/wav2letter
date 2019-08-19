@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
     sets["si284"] = utils.ndx2idlist(
         args.wsj1,
-        "13_34.1/wsj1/doc/indices/si_tr_s.ndx",
+        "13-34.1/wsj1/doc/indices/si_tr_s.ndx",
         transcripts,
         None,
         sets["si284"],
@@ -109,7 +109,7 @@ if __name__ == "__main__":
 
     sets["nov93"] = utils.ndx2idlist(
         args.wsj1,
-        "13_32.1/wsj1/doc/indices/wsj1/eval/h1_p0.ndx",
+        "13-32.1/wsj1/doc/indices/wsj1/eval/h1_p0.ndx",
         transcripts,
         lambda line: line.replace("13_32_1", "13_33_1"),
     )
@@ -117,19 +117,19 @@ if __name__ == "__main__":
 
     sets["nov93_5k"] = utils.ndx2idlist(
         args.wsj1,
-        "13_32.1/wsj1/doc/indices/wsj1/eval/h2_p0.ndx",
+        "13-32.1/wsj1/doc/indices/wsj1/eval/h2_p0.ndx",
         transcripts,
         lambda line: line.replace("13_32_1", "13_33_1"),
     )
     assert len(sets["nov93_5k"]) == 215
 
     sets["nov93dev"] = utils.ndx2idlist(
-        args.wsj1, "13_34.1/wsj1/doc/indices/h1_p0.ndx", transcripts
+        args.wsj1, "13-34.1/wsj1/doc/indices/h1_p0.ndx", transcripts
     )
     assert len(sets["nov93dev"]) == 503
 
     sets["nov93dev_5k"] = utils.ndx2idlist(
-        args.wsj1, "13_34.1/wsj1/doc/indices/h2_p0.ndx", transcripts
+        args.wsj1, "13-34.1/wsj1/doc/indices/h2_p0.ndx", transcripts
     )
     assert len(sets["nov93dev_5k"]) == 513
 
